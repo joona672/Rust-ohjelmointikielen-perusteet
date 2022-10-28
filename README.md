@@ -11,7 +11,7 @@ Rustin voit ladata niiden verkkosivuilta. Suositelluin tapa käyttää Rustupia.
 (https://www.rust-lang.org/tools/install)
 
 
-## Ensimmäinen Rust ohjelma
+## Ensimmäinen Rust-ohjelma
 
 Rust vaatii jokaiseen ohjelmaan main-funktion eli pääohjelman.
 
@@ -25,10 +25,38 @@ fn main()
 }
 
 ```
+
+#### Kommentit
+
+Kommentit tehdään Rustilla täysin samoin, kuin vaikkapa C++ tai Javassa.
+```rust
+//Tämä on yhden rivin kommentti.
+
+/* Tämä 
+on usean rivin kommentti. */
+
+```
+
+
 ### Muuttujat
 
 Rust on staattisesti tyypitetty kieli samoin, kuin C++ ja Java.
 Kaikissa tilanteissa tyyppia ei ole kuitenkaan pakko antaa, vaan kääntäjä osaa tunnistaa sen automaattisesti.
 
-Rustissa muuttujat aloitetaan sanalla *let* ja vakiot *const*-sanalla.
+Rustissa muuttujat aloitetaan sanalla *let*. Rustissa kaikki muuttujat ovat muuttumattomia. Jotta voimme muuttaa muuttujaa sen esittelyn ja määrittelyn jälkeen, on 
+käytettävä avainsanaa mut.
+
+```rust
+let a = 0; //Tämän muuttujan arvoa ei voida muuttaa.
+
+a = 2; //Tämä ei toimi.
+
+let mut b = 0; //Tämän arvon voi muuttaa.
+
+b = 5; //Tämä toimii.
+
+const VAKIO = 0; //Vakioita voidaan luoda *const* avainsanalla.
+```
+
+
 
