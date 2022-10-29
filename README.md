@@ -169,6 +169,25 @@ If-lause alkaa if avainsanalla, tätä seuraa ehto. Ehdon toteutuessa mennään 
 let luku = 5;
 if luku == 5
 {
-  println!("Muuttuja luku == 5");
+  println!("Muuttujan luku arvo on 5");
 }
+```
+
+Usein on tarpeen lisätä vaihtoehtoja if lohkoon. Jos ylläolevassa esimerkissä muuttujan luku arvo olisi muu, kuin 5, mitään ei tapahtuisi.
+Voimme lisätä else-haaran, joka toteutetaan silloin, kun luku ei ole viisi.
+Voimme luoda myös useampia haaroja else if-lauseen avulla. Else if-haaroja voi käytännössä kuinka paljon tahansa.
+
+##### Esimerkki
+
+```rust
+let luku = 5;
+if luku == 5
+{
+  println!("Muuttujan luku arvo on 5");
+} else if luku > 100 {
+  println!("Muuttujan luku arvo on suurempi, kuin 100");
+} else {
+  println!("Muuttujan luku arvo ei ole 5, mutta se ei ole 100 suurempi");
+}
+
 ```
