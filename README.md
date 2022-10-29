@@ -84,5 +84,5 @@ const VAKIO = 0; //Vakioita voidaan luoda *const* avainsanalla.
 | Operaattori | Kuvaus | Esimerkki |
 | --- | --- | --- |
 | && | AND | x == 5 && y == 5|
-| <code>&#124&;</code> | OR | x == 5 || y == 5 |
+| \|\| | OR | x == 5 || y == 5 |
 | ! | NOT | !(a > 10) |
