@@ -82,9 +82,10 @@ fn main()
 ```
 
 Rust antaa varoituksen käyttämättömistä muuttujista.
-Halutessaan tämän saa kytkettyä pois lisäämällä ohjelman alkuun `#[allow(unused_variables)]` rivin.
+Halutessaan tämän saa kytkettyä pois lisäämällä ohjelman 
+alkuun `#[allow(unused_variables)]` rivin.
 
-#### Kokonaislukutyypit
+#### Tietotyypit
 | Koko | Etumerkillinen | Etumerkitön |
 | --- | --- | --- |
 | 8 bittiä | i8 | u8 |
@@ -92,6 +93,31 @@ Halutessaan tämän saa kytkettyä pois lisäämällä ohjelman alkuun `#[allow(
 | 32 bittiä | i32 | u32 |
 | 64 bittiä | i64 | u64 |
 | Riippuu koneen arkkitehtuurista | isize | usize |
+
+
+Boolean muuttujalla on vain kaksi tilaa, jotka ovat `true` ja `false`.
+Alla esimerkki Tämäntyyppisistä muuttujista.
+
+```rust
+fn main()
+{
+  let a = true;
+  let b:bool = false;
+}
+```
+
+##### Char ja string
+Char on yhden merkin mittainen muuttujatyyppi. Rustissa char vie 4 tavua toisin, kuin useimmissa kielissä char vie vain 1 tavun.
+
+
+```rust
+fn main()
+{
+  let merkki = '@';
+  let merkki2:char = '♥';
+  
+}
+```
 
 
 ### Ehdot ja ehtolauseet
