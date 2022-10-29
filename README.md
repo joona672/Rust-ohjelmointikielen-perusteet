@@ -10,6 +10,9 @@ Rustin voit ladata niiden verkkosivuilta. Suositelluin tapa käyttää Rustupia.
 
 (https://www.rust-lang.org/tools/install)
 
+Voit myös kokeilla Rustia netissä. Esimerkiksi Rust-playground.
+(https://play.rust-lang.org/)
+
 
 ## Ensimmäinen Rust-ohjelma
 
@@ -78,7 +81,7 @@ fn main()
 }
 ```
 
-
+#### Kokonaislukutyypit
 | Koko | Etumerkillinen | Etumerkitön |
 | --- | --- | --- |
 | 8 bittiä | i8 | u8 |
