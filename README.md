@@ -58,6 +58,35 @@ b = 5; //Tämä toimii.
 const VAKIO = 0; //Vakioita voidaan luoda *const* avainsanalla.
 ```
 
+Tulostaessa muuttujien arvoja, tulee argumenttina olla merkkijono tai vähintään `"{}"` ja pilkulla erotettuna muuttuja/muuttujat.
+Ohjelma korvaa aaltosulut muuttujien arvoilla.
+
+##### Esimerkki
+```rust
+fn main()
+{
+  let x:u8 = 20;
+  let y:u8 = 10;
+  
+  println!("Muuttujan x arvo on {}", x); //Tämä toimii. Ohjelma tulostaisi: Muuttujan x arvo on 20
+  
+  println!("{}", x); //Tämä toimii myös
+  
+  println!(x); //Tämä ei toimi
+  
+  println!("{} {}", x, y); //Useamman muuttujan tulostus. Tulostus näyttäisi: 20 10
+}
+```
+
+
+| Koko | Etumerkillinen | Etumerkitön |
+| --- | --- | --- |
+| 8 bittiä | i8 | u8 |
+| 16 bittiä | i16 | u16 |
+| 32 bittiä | i32 | u32 |
+| 64 bittiä | i64 | u64 |
+| Riippuu koneen arkkitehtuurista | isize | usize |
+
 
 ### Ehdot ja ehtolauseet
 
