@@ -3,7 +3,7 @@ Rust peruskurssi
 
 ## Mikä Rust on?
 
-Rust on Mozilla foundationin kehittämä käännettävä ohjelmointikieli. Rust julkaistiin vuonna 2010. Rustia pidetään tehokkaana ja turvallisena järjestelmätason ohjelmointikielenä, joka soveltuu moneen käyttötarkoitukseen. 
+Rust on Mozillan kehittämä käännettävä ohjelmointikieli. Rust julkaistiin vuonna 2010. Rustia pidetään tehokkaana ja turvallisena järjestelmätason ohjelmointikielenä, joka soveltuu moneen käyttötarkoitukseen. 
 
 ## Rustin asennus
 Rustin voit ladata niiden verkkosivuilta. Suositelluin tapa käyttää Rustupia.
@@ -80,6 +80,9 @@ fn main()
   println!("{} {}", x, y); //Useamman muuttujan tulostus. Tulostus näyttäisi: 20 10
 }
 ```
+
+Rust antaa varoituksen käyttämättömistä muuttujista.
+Halutessaan tämän saa kytkettyä pois lisäämällä ohjelman alkuun `#[allow(unused_variables)]` rivin.
 
 #### Kokonaislukutyypit
 | Koko | Etumerkillinen | Etumerkitön |
