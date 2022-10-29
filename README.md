@@ -59,4 +59,30 @@ const VAKIO = 0; //Vakioita voidaan luoda *const* avainsanalla.
 ```
 
 
+### Ehdot ja ehtolauseet
 
+#### Vertailuoperaattorit
+| Operaattori | Kuvaus | Esimerkki |
+| --- | --- | --- |
+| == | Yhtäsuuri | 5 == 5 |
+| != | Erisuuri | 5 != 6 |
+| >= | Suurempi tai yhtäsuuri | 10 >= 5 |
+| <= | Pienempi tai yhtäsuuri | 5 <= 6 |
+| > | Suurempi kuin | 15 > 5 |
+| < | Pienempi kuin | 4 < 5 |
+
+#### Matemaattiset operaattorit
+| Operaattori | Kuvaus | Esimerkki |
+| --- | --- | --- |
+| + | Yhteenlasku | 5 + 5 |
+| - | Vähennyslasku | 5 - 5 |
+| * | Kertolasku | 5 * 5 |
+| / | Jakolasku | 5 / 5 |
+| % | Jakojäännös | 5 % 2 |
+
+
+| Operaattori | Kuvaus | Esimerkki |
+| --- | --- | --- |
+| && | AND | x == 5 && y == 5|
+| || | OR | x == 5 || y == 5 |
+| ! | NOT | !(a > 10) |
