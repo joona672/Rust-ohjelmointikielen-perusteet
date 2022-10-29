@@ -95,6 +95,19 @@ alkuun `#[allow(unused_variables)]` rivin.
 | Riippuu koneen arkkitehtuurista | isize | usize |
 
 
+Jos muuttuja saa suuremman arvon, kuin sen koko sallii, alkaa muuttuja uudelleen nollasta.
+##### Esimerkki
+```rust
+   // 0-255 on etumerkittömän 8-bittisen laajuus.
+   let x:u8 = 256;   //Muuttujalle tulee arvoksi 0
+   let y:u8 = 257;   //Muuttujalle tulee arvoksi 1
+   let z:u8 = 258;    //Muuttujalle tulee arvoksi 2
+```
+
+##### Float
+Float on liukuluku. Liukuluvulla on kaksi tyyppiä `f32` ja `f64`.
+
+##### Boolean
 Boolean muuttujalla on vain kaksi tilaa, jotka ovat `true` ja `false`.
 Alla esimerkki Tämäntyyppisistä muuttujista.
 
@@ -147,3 +160,15 @@ fn main()
 | && | AND | x == 5 && y == 5|
 | \|\| | OR | x == 5 || y == 5 |
 | ! | NOT | !(a > 10) |
+
+
+#### if-lause
+
+If-lause alkaa if avainsanalla, tätä seuraa ehto. Ehdon toteutuessa mennään lohkon sisään.
+```rust
+let luku = 5;
+if luku == 5
+{
+  println!("Muuttuja luku == 5");
+}
+```
